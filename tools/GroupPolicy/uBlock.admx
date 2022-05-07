@@ -136,9 +136,12 @@
                 <multiText id="userSettingsDialogMulti" valueName="userSettings" required="true" maxStrings="1" />
             </elements>
         </policy>
-        <policy name="firefoxDisableDashboard" class="Both" displayName="$(string.disableDashboard)" explainText="$(string.disableDashboard_Help)" key="Software\Policies\Mozilla\Firefox\3rdparty\Extensions\uBlock0@raymondhill.net" valueName="disableDashboard">
+        <policy name="firefoxDisableDashboard" class="Both" displayName="$(string.disableDashboard)" explainText="$(string.disableDashboardMulti_Help)" presentation="$(presentation.disableDashboardMulti)" key="Software\Policies\Mozilla\Firefox\3rdparty\Extensions\uBlock0@raymondhill.net">
             <parentCategory ref="MozillaFirefox" />
             <supportedOn ref="V1_33_0" />
+            <elements>
+                <multiText id="disableDashboardMulti" valueName="disableDashboard" required="true" maxStrings="1" />
+            </elements>
         </policy>
         <policy name="firefoxDisabledPopupPanelParts" class="Both" displayName="$(string.disabledPopupPanelParts)" explainText="$(string.disabledPopupPanelParts_Help)" presentation="$(presentation.disabledPopupPanelPartsMulti)" key="Software\Policies\Mozilla\Firefox\3rdparty\Extensions\uBlock0@raymondhill.net">
             <parentCategory ref="MozillaFirefox" />

@@ -53,6 +53,12 @@ https://github.com/gorhill/uBlock/wiki/Deploying-uBlock-Origin:-configuration#ad
             <string id="disableDashboard_Help">Set to true to prevent access to configuration options
                 
 https://github.com/gorhill/uBlock/wiki/Deploying-uBlock-Origin:-configuration#disabledashboard</string>
+            <string id="disableDashboardMulti_Help">Set to true to prevent access to configuration options
+
+Example value:
+true
+                
+https://github.com/gorhill/uBlock/wiki/Deploying-uBlock-Origin:-configuration#disabledashboard</string>
             <string id="disabledPopupPanelParts_Help">An array of strings, where each string refer to a part of the popup panel which should be removed from view. Current supported named parts:
 
 globalStats: remove access to "Blocked since install" statistic.
@@ -127,6 +133,9 @@ https://github.com/gorhill/uBlock/wiki/Deploying-uBlock-Origin:-configuration#to
             </presentation>
             <presentation id="userSettingsMulti">
                 <multiTextBox refId="userSettingsDialogMulti" />
+            </presentation>
+            <presentation id="disableDashboardMulti">
+                <multiTextBox refId="disableDashboardMulti" />
             </presentation>
             <presentation id="disabledPopupPanelPartsMulti">
                 <multiTextBox refId="disabledPopupPanelPartsDialogMulti" />
